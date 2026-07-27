@@ -21,17 +21,22 @@ def lotto_game() :
             match_num = len(set(lotto_num) & set(player_num))
             if match_num < 2 :
                 print("꽝이야...")
+                print(lotto_num)
             elif match_num == 2 :
                 print("4등이다...")
+                print(lotto_num)
                 money += 1000
             elif match_num == 3 :
                 print("3등이다...")
+                print(lotto_num)
                 money += 5000
             elif match_num == 4 :
                 print("2등이다...!")
+                print(lotto_num)
                 money += 10000
             elif match_num == 5 :
                 print("1등이다!!!!!!!!!!")
+                print(lotto_num)
                 money += 100000000
         elif x == "n" or x == "N":
             print("집에가자...")
