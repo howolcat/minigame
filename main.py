@@ -25,3 +25,9 @@ while True:
     elif choice == "5" :
         print("bye~")
         break
+    else :
+        print('''
+        
+        1부터 5번까지 입력해 주세요!!
+        
+        ''')
