@@ -1,12 +1,12 @@
 import random
 
-def lotto_game():
 
+def lotto_game() :
     money = 10000
 
     while True:
-        x = input("로또나 한번 뽑아 볼까...?(y/n)")
         print(f"현재 돈{money}")
+        x = input("로또나 한번 뽑아 볼까...?(y/n)")
         if money == 0:
             print("돈이 없다....")
             break
@@ -19,7 +19,9 @@ def lotto_game():
                 continue
 
             match_num = len(set(lotto_num) & set(player_num))
-            if match_num == 2 :
+            if match_num < 2 :
+                print("꽝이야...")
+            elif match_num == 2 :
                 print("4등이다...")
                 money += 1000
             elif match_num == 3 :
